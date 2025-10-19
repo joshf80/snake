@@ -12,11 +12,15 @@
 
 class Sprite {
 private:
-    std::vector<int> m_pos;
+    Point m_pos{};
 
 public:
-    explicit Sprite(std::vector<int> &pos) {
+    explicit Sprite(Point &pos) {
         m_pos = pos;
+    }
+
+    Point getPos() {
+        return m_pos;
     }
 };
 

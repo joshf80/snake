@@ -14,7 +14,7 @@ private:
     std::deque<Point> m_body;
     Direction m_direction;
 public:
-    Snake(std::vector<int> &pos, std::deque<Point> &body) : Sprite(pos) {
+    Snake(Point &pos, std::deque<Point> &body) : Sprite(pos) {
         m_direction = RIGHT;
         m_body = body;
     }
